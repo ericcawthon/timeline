@@ -8,8 +8,8 @@ export default (state = INITIAL_STATE, action) => {
     switch (action.type) {
         case SUBMIT_DATES:
             let f = new Date(
-                Date.parse(action.payload.endDate) +
-                    (Date.parse(action.payload.endDate) -
+                Date.parse(action.payload.midPointDate) +
+                    (Date.parse(action.payload.midPointDate) -
                         Date.parse(action.payload.startDate))
             );
             let fmonth =

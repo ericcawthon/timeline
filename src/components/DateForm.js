@@ -39,8 +39,8 @@ class DateForm extends React.Component {
                     component={this.renderInput}
                 />
                 <Field
-                    name="endDate"
-                    label="Enter End Date"
+                    name="midPointDate"
+                    label="Enter Midpoint Date"
                     component={this.renderInput}
                 />
                 <button className="ui button primary">Submit</button>
@@ -55,8 +55,8 @@ const validate = formValues => {
         errors.startDate = "You must enter a starting date";
     }
 
-    if (!formValues.endDate) {
-        errors.endDate = "You must enter an ending date";
+    if (!formValues.midPointDate) {
+        errors.midPointDate = "You must enter a midpoint date";
     }
 
     return errors;

@@ -29,8 +29,8 @@ class TimelineDisplay extends React.Component {
                         this.props.dateValues.dates.startDate
                     )}
                     {this.renderdate(
-                        "End Date: ",
-                        this.props.dateValues.dates.endDate
+                        "MidPoint Date: ",
+                        this.props.dateValues.dates.midPointDate
                     )}
                     {this.renderdate(
                         "Future Date: ",
